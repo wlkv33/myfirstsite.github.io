@@ -1,0 +1,166 @@
+		* {
+			margin: 0; /*Обнуляем все отступы*/
+			padding: 0; /*Обнуляем все поля вокруг элементов*/
+			-moz-transition:0.3s 0.01s ease; /*Установка задержки анимации (Mozilla)*/
+			-o-transition: all 0.3s 0.01s ease; /*Opera*/
+			-webkit-transition: all 0.3s 0.01s ease; /*Chrome, общая*/
+		}
+		a {
+			text-decoration: none; /*Убираем декорации ссылок*/
+			color: gray; /*Устанавливаем серый цвет ссылок*/
+		}
+		a:hover {
+			color: #FF4500; /*При наведении, ссылка приобретает красноватый цвет*/
+		}
+		body {
+			font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /*Установка шрифта (В случае, если нету первого, загружается следующий по порядку)*/
+			font-weight: bold; /*Установка "жирного" шрифта*/
+			
+		}
+		#index {
+			background:url(../img/titulnik.jpg); /*Картинка на заднем фоне*/
+			background-size: 100% 100%; /*Растягиваем по ширине% длине%*/
+			background-repeat: no-repeat; /*Убираем повторение картинки на фоне*/
+			background-attachment: fixed; /*Фиксируем прокрутку изображения на фоне*/
+		}
+		header {
+			margin-top: 10px; /*Отступ сверху от шапки*/
+			position: relative; /*Относительная позиция шапки*/
+			overflow: hidden; /*Если выступает за поля окна, спрятать выступающую часть*/
+			height: 45px; /*Высота*/
+			z-index: 100; /*Передний план*/
+		}
+		header ul {
+			display: flex; /*Выравниваем пункты меню по вертикали*/
+			list-style: none; /*Убираем стиль*/
+			position: relative; /*Относительное позиционирование*/
+			left: 50%; /*Отступ слева*/
+			float: left; /*Выравнивание по левому краю*/
+			text-align: center; /*Выравние текста по центру*/
+		}
+		header ul li {
+			position: relative; /*Относительное позиционирование*/
+			left: -50%; /*Отступ слева -50%*/
+			height: 40px; /*Высота*/
+		}
+		header ul li a{ 
+			display: block; /*Отображать как блочный элемент*/
+			color: #fff; /*Белый цвет*/
+			padding: 0 15px; /*Поля*/
+			line-height: 40px; /*Высота линии*/
+		}
+		header ul li a:hover{ 
+			font-size: 125%; /*При наведении увеличить ссылку до 125%*/
+		}
+		header ul li a img:hover{
+			width: 50px; /*Увеличить до 50px*/
+			height: 45px; /*До 45px*/
+		}
+		header .mobile {
+			display: none;
+		}
+		#content {
+			margin-top: 2%; /*Отступ сверху,*/
+			margin-right: 10%; /*справа*/
+			margin-left: 10%; /*слева,*/
+			margin-bottom: 5%; /*снизу.*/
+			text-align: center; /*Выравнивание текста по центру*/
+			height: 100%; /*Высота*/
+			font-size: 18px; /*Размер шрифта*/
+			border-radius: 5%; /*Закругление углов рамки*/
+			background: rgba(0, 0, 0, 0.6); /* Цвет фона, прозрачность (0.6)*/
+			padding: 1%; /* Поля вокруг текста */
+		}
+		#content p {
+			padding: 20px 0 10px 0; 
+			color: white; 
+		}
+		#content h1 {
+			font-size: 26px;
+			margin: 20px 0 10px 0;
+			text-align: center;
+			color: #FF4500;
+		}
+		#content h2 {
+			font-size: 22px;
+			margin: 20px 0 10px 0;
+			text-align: center;
+			color: #FF4500;
+		}
+		#content li{
+			margin-left: 10%;
+			color: white;
+			text-align: left;
+		}
+		#content img{
+			width: 70%;
+			height: 70%;
+		}
+		#content #rating {
+			text-align: center;
+			margin-top: 2%;
+			color: white;
+			width: 100%;
+			font-weight: normal;
+			border-spacing: 0 20px;
+		}
+		#content #rating img{
+			width: 20px;
+			height: 16px;
+		}
+		#content #rating .tdleft {
+			text-align: left;
+		}
+		#content #rating .trone {
+			color: #FF4500;
+			font-weight: bold;
+		}
+		#content #igroky{
+			border-spacing: 20px;
+			color: white;
+		}
+		#content #igroky p{
+			font-size: 18px;
+		}
+		#content #igroky .nickname{
+			float: left;
+			color: #FF4500;
+			font-size: 30px;
+		}
+		#content #igroky .nickname img{
+			width: 20px;
+			height:16px;
+		}
+		footer {
+			position: fixed;
+			bottom: 0;
+			color: #93824e;
+			background: #171717;
+			text-align: center;
+			z-index: 100;
+			width: 100%;
+			font-size: 10px;
+		}
+		footer .vk {
+			float: left;
+			margin-left: 5px;
+		}
+		.topbutton {
+			position: fixed;
+			width: 55px;
+			cursor: pointer;
+			bottom: 10%;
+			right: 3.5%;
+			overflow: hidden;
+			z-index: 101; /*З - позиция, выдвигает кнопку на первый план.*/
+			opacity: 0.7;
+			transition: 0.5s;
+		}
+		.topbutton:hover {
+				opacity: 1;
+		}
+		/* MEDIA */
+		video {
+			width: 75%;
+		}
+		
